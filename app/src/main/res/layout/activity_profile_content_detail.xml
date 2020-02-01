@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommentActivity">
+
+    <RelativeLayout
+        android:id="@+id/profile_content_detail_layout_toolbar"
+        android:background="@color/colorLightGray"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:padding="12dp"
+            android:gravity="center"
+            android:id="@+id/profile_content_detail_setting_back"
+            android:src="@drawable/icon_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/profile_content_toolbar_useremail"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="사용자 이메일 "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/profile_content_detail_recyclerview"
+        android:orientation="vertical"
+        android:layout_margin="3dp"
+        android:layout_below="@+id/profile_content_detail_layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</RelativeLayout>

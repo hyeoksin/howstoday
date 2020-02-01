@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_posts"
+        android:icon="@drawable/icon_posts"
+        android:enabled="true"
+        android:title="@string/action_posts"/>
+
+    <item
+        android:id="@+id/action_rooms"
+        android:icon="@drawable/icon_rooms"
+        android:enabled="true"
+        android:title="@string/action_rooms"/>
+
+    <item
+        android:id="@+id/action_talks"
+        android:icon="@drawable/icon_talks"
+        android:enabled="true"
+        android:title="@string/action_talks"/>
+
+    <item
+        android:id="@+id/action_friends"
+        android:icon="@drawable/icon_friends"
+        android:enabled="true"
+        android:title="@string/action_friends"/>
+
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@drawable/icon_profile"
+        android:enabled="true"
+        android:title="@string/action_profile"/>
+</menu>

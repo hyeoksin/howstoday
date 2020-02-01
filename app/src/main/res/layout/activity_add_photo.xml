@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddContentsActivity">
+
+    <include
+        android:id="@+id/addphoto_toolbar"
+        layout="@layout/main_toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/toolbar_division"
+        android:orientation="horizontal"
+        android:layout_below="@+id/addphoto_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/addphoto_image"
+        android:scaleType="centerCrop"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/toolbar_division"
+        android:layout_width="400dp"
+        android:layout_height="260dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/photo_editText"
+        android:layout_below="@+id/addphoto_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/addphoto_edit_explain"
+            android:layout_margin="5dp"
+            android:gravity="top"
+            android:hint="사진에 대한 설명을 추가해주세요."
+            android:layout_width="match_parent"
+            android:layout_height="250dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/addphoto_btn_upload"
+        android:textSize="12dp"
+        android:text="업로드"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/photo_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

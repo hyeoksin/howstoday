@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/settings"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:padding="12dp"
+            android:gravity="center"
+            android:id="@+id/account_setting_back"
+            android:src="@drawable/icon_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="설정"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BA948F8F"/>
+
+    <TextView
+        android:id="@+id/account_setting_logout"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="로그아웃"
+        android:textColor="#777777"
+        android:gravity="center"
+        android:background="@drawable/default_background"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+    <TextView
+        android:id="@+id/account_setting_delete"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="회원탈퇴"
+        android:textColor="#777777"
+        android:gravity="center"
+        android:background="@drawable/default_background"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+</LinearLayout>

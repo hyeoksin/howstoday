@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/include_main"
+        layout="@layout/main_toolbar" />
+
+    <View
+        android:id="@+id/line_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/main_content"
+        android:background="#BA948F8F"/>
+
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_below="@+id/include_main"
+        android:layout_above="@+id/line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/main_test_image"
+            android:padding="150dp"
+            android:src="@drawable/logo_main"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <View
+        android:id="@+id/line_bottom"
+        android:layout_above="@+id/include_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BA948F8F"/>
+
+    <!-- 하단 내비게이션-->
+    <include
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/include_bottom_navigation"
+        layout="@layout/bottom_navigation" />
+
+</RelativeLayout>

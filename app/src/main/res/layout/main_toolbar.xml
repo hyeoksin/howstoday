@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    tools:context=".MainActivity">
+
+    <!-- 메인 툴바 -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_margin="5dp"
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- 메인 로고
+            1) 디자인이 필요함
+            -->
+            <ImageView
+                android:id="@+id/main_toolbar_back"
+                android:visibility="gone"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/logo_main"
+                android:src="@drawable/icon_back"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/main_toolbar_useremail"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/main_toolbar_back"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="UserID"
+                android:layout_weight="10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/logo_main"
+                android:layout_centerInParent="true"
+                android:src="@drawable/logo_main"
+                android:layout_weight="15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/settings"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/logo_main"
+                android:src="@drawable/icon_settings"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+</RelativeLayout>
